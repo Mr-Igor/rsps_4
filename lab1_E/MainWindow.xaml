@@ -1,0 +1,18 @@
+﻿<Window x:Class="lab1_E.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab1_E"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Menu>
+            <MenuItem x:Name="Order" Header="Поручения" Click="Order_OnClick"></MenuItem>
+            <MenuItem x:Name="OrderType" Header="Тип сделки" Click="OrderType_OnClick"></MenuItem>
+            <MenuItem x:Name="OrderVeriety" Header="Вид сделки" Click="OrderVeriety_OnClick"></MenuItem>
+            <MenuItem x:Name="Currency" Header="Валюта" Click="Currency_OnClick"></MenuItem>
+        </Menu>
+
+    </Grid>
+</Window>

@@ -1,0 +1,31 @@
+﻿<Window x:Class="lab1_E.View.WindowCurrency"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:local="clr-namespace:lab1_E.View"
+        mc:Ignorable="d" 
+        Title="Валюта" Height="450" Width="800">
+
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Button x:Name="btnAdd" Margin="10,10,5,10" Content="Добавить"
+            Height="25" Click="btnAdd_Click"></Button>
+            <Button x:Name="btnEdit" Margin="10,10,5,10" Content="Редактировать"
+            Height="25" Click="btnEdit_Click"></Button>
+            <Button x:Name="btnDelete" Margin="10,10,5,10" Content="Удалить"
+            Height="25" Click="btnDelete_Click"></Button>
+        </StackPanel>
+        <ListView x:Name="ListCurrency">
+            <ListView.View>
+                <GridView>
+                    <GridView.Columns>
+                        <GridViewColumn Header="Код валюты" DisplayMemberBinding="{Binding Id}"/>
+                        <GridViewColumn Header="Полное наименование" DisplayMemberBinding="{Binding CurrencyFull}"/>
+                        <GridViewColumn Header="Краткое наименование" DisplayMemberBinding="{Binding CurrencyShort}"/>
+                    </GridView.Columns>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </StackPanel>
+</Window>
